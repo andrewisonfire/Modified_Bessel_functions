@@ -21,7 +21,7 @@ program main
   k1q = sqrt(PI/2.0q0/Ri)* (1.0q0 + 1.0q0 / Ri) * exp(-Ri)
 
   write(*,*) "Bessel functions calculation greetings!"
-  call calc_bessel_q_precision(n1div2,ri,Iq,Kq,dIq,dKq)
+  call calc_bessel_q_precision(n1div2,ri,Iq,Kq,dIq,dKq) !use this subroutine
 
 
 !  write(*,*) 'I know PI number:'
