@@ -38,7 +38,7 @@ real(16) function GaussFrac0(nu,z,kmax)
     tmp = ak(nu,z,kmax) + 1.0q0
 
     do k = kmax-1,1
-        tmp = 1.0q0 + ak(k) / tmp
+        tmp = 1.0q0 + ak(nu,z,k) / tmp
     end do
 
     GaussFrac0 = 1.0q0 / tmp / a0(nu,z)
